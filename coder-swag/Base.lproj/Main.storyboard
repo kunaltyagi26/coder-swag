@@ -33,29 +33,35 @@
                                 <rect key="frame" x="0.0" y="59.5" width="375" height="543.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="ZtX-Xw-sfo" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="148" id="ZtX-Xw-sfo" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZtX-Xw-sfo" id="2TW-lt-ghg">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZtX-Xw-sfo" id="2TW-lt-ghg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="n0e-fh-Mh8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="n0e-fh-Mh8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="40i-c8-SOI"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aar-M9-iWo">
-                                                    <rect key="frame" x="141" y="60" width="93" height="27.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aar-M9-iWo">
+                                                    <rect key="frame" x="122" y="60" width="130" height="27.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="9Ol-Hc-5yJ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.99998217820000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Aar-M9-iWo" firstAttribute="centerY" secondItem="2TW-lt-ghg" secondAttribute="centerY" id="4pD-Xr-yJ8"/>
                                                 <constraint firstAttribute="trailing" secondItem="n0e-fh-Mh8" secondAttribute="trailing" id="7Mv-Jy-K4c"/>
-                                                <constraint firstItem="Aar-M9-iWo" firstAttribute="centerY" secondItem="2TW-lt-ghg" secondAttribute="centerY" id="8jt-Tj-6kg"/>
                                                 <constraint firstItem="n0e-fh-Mh8" firstAttribute="leading" secondItem="2TW-lt-ghg" secondAttribute="leading" id="HQS-Hx-7An"/>
                                                 <constraint firstAttribute="bottom" secondItem="n0e-fh-Mh8" secondAttribute="bottom" id="IDf-T2-f9S"/>
-                                                <constraint firstItem="Aar-M9-iWo" firstAttribute="centerX" secondItem="2TW-lt-ghg" secondAttribute="centerX" id="VuX-1k-4f9"/>
+                                                <constraint firstItem="Aar-M9-iWo" firstAttribute="centerX" secondItem="n0e-fh-Mh8" secondAttribute="centerX" id="VuX-1k-4f9"/>
                                                 <constraint firstItem="n0e-fh-Mh8" firstAttribute="top" secondItem="2TW-lt-ghg" secondAttribute="top" id="W77-X2-trQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
