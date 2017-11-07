@@ -24,7 +24,7 @@ class DataService
     private let hoodies = [Product(title: "Devslopes Logo Hoodie Grey", price: "$32", imageName: "hoodie01.png"),
                            Product(title: "Devslopes Logo Hoodie Red", price: "$32", imageName: "hoodie02.png"),
                            Product(title: "Devslopes Hoodie Grey", price: "$32", imageName: "hoodie03.png"),
-                           Product(title: "Devslopes Hoodie Black", price: "$32", imageName: "hoodie014.png")]
+                           Product(title: "Devslopes Hoodie Black", price: "$32", imageName: "hoodie04.png")]
     
     private let shirts = [Product(title: "Devslopes Logo Shirt Black", price: "$18", imageName: "shirt01.png"),
                           Product(title: "Devslopes Badge Shirt Light Grey", price: "$19", imageName: "shirt02.png"),
