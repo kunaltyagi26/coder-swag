@@ -2,7 +2,7 @@
 
 Coder Swag is a mock store front designed to learn the fundamentals of Table Views and Collection Views. In this app, we created a reusable cell and learnt how to implement segues progragrammtically.
 
-It used also taught us the basics of how we can display data in an app, this time from a pre-coded service called DataService which served us Arrays of products. Alongside this, building the app also taught us how we would load in data to Cells, by creating custom views and having them handle the population of content.
+It is created to learn the basics of how we can display data in an app, this time from a service called DataService which served us Arrays of products. Alongside this, by building the app, we learn how we would load in data to Cells, by creating custom views and having them handle the population of content.
 
 ## Screenshots
 
